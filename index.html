@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dan Caddigan - A Celebration 💕</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            overflow: hidden;
+            color: #333;
+        }
+
+        /* Floating hearts background */
+        svg.floating-hearts {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+
+        .container {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+            background: rgba(255, 255, 255, 0.95);
+            padding: 60px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 600px;
+            margin: 20px;
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 3em;
+            color: #764ba2;
+            margin-bottom: 10px;
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .username {
+            font-size: 1.5em;
+            color: #667eea;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+
+        .description {
+            font-size: 1.1em;
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .projects {
+            text-align: left;
+            margin: 30px 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea15 0%, #764ba215 100%);
+            border-radius: 10px;
+        }
+
+        .projects h2 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            text-align: center;
+        }
+
+        .project-item {
+            margin: 10px 0;
+            padding: 10px;
+            background: white;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+        }
+
+        .project-item strong {
+            color: #667eea;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 30px 0;
+            gap: 20px;
+        }
+
+        .stat {
+            flex: 1;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            font-weight: bold;
+        }
+
+        .stat-number {
+            font-size: 2em;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.9em;
+            opacity: 0.9;
+        }
+
+        .love-message {
+            font-size: 1.3em;
+            color: #d63031;
+            margin: 30px 0;
+            font-style: italic;
+            animation: bounce 1s ease-in-out infinite;
+        }
+
+        .github-link {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .github-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+        }
+
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #999;
+        }
+    </style>
+</head>
+<body>
+    <svg class="floating-hearts" id="hearts-container"></svg>
+
+    <div class="container">
+        <h1>💕 Dan Caddigan 💕</h1>
+        <div class="username">@goldcaddy77</div>
+
+        <div class="description">
+            <p>A brilliant developer, creator of amazing tools, and a genuinely awesome person who deserves all the love in the world.</p>
+        </div>
+
+        <div class="love-message">
+            You are appreciated, valued, and loved! ❤️
+        </div>
+
+        <div class="projects">
+            <h2>⚡ Awesome Projects</h2>
+            <div class="project-item">
+                <strong>Warthog:</strong> GraphQL API Framework with strong conventions and auto-generated schema
+            </div>
+            <div class="project-item">
+                <strong>Reblocks:</strong> React Components for Nano cryptocurrency - including Payments
+            </div>
+            <div class="project-item">
+                <strong>Serverless Tools:</strong> Elasticsearch & DynamoDB clients that work beautifully with serverless-offline
+            </div>
+            <div class="project-item">
+                <strong>Warthog Starter:</strong> Minimal sample application to get started quickly
+            </div>
+        </div>
+
+        <div class="stats">
+            <div class="stat">
+                <span class="stat-number">🌟</span>
+                <span class="stat-label">GitHub Pro</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">🚀</span>
+                <span class="stat-label">Creator</span>
+            </div>
+            <div class="stat">
+                <span class="stat-number">💪</span>
+                <span class="stat-label">Legend</span>
+            </div>
+        </div>
+
+        <a href="https://github.com/goldcaddy77" class="github-link">Visit GitHub Profile</a>
+
+        <div class="footer">
+            <p>Made with ❤️ to celebrate someone amazing</p>
+        </div>
+    </div>
+
+    <script>
+        // Create floating hearts
+        function createHeart() {
+            const svg = document.getElementById('hearts-container');
+            const heart = document.createElementNS('http://www.w3.org/2000/svg', 'path');
+            
+            const x = Math.random() * window.innerWidth;
+            const y = window.innerHeight + 20;
+            const size = Math.random() * 20 + 10;
+            const duration = Math.random() * 3 + 4;
+            const delay = Math.random() * 2;
+            
+            // Heart SVG path
+            const heartPath = 'M12,21.35l-1.45-1.32C5.4,15.36,2,12.28,2,8.5 C2,5.42,4.42,3,7.5,3c1.74,0,3.41,0.81,4.5,2.09C13.09,3.81,14.76,3,16.5,3 C19.58,3,22,5.42,22,8.5c0,3.78-3.4,6.86-8.55,11.54L12,21.35z';
+            
+            heart.setAttribute('d', heartPath);
+            heart.setAttribute('fill', ['#ff1744', '#ff5252', '#ff6e40', '#ff9100', '#ffab40'][Math.floor(Math.random() * 5)]);
+            heart.setAttribute('opacity', '0.8');
+            
+            const group = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+            group.setAttribute('transform', `translate(${x}, ${y}) scale(${size/24})`);
+            group.appendChild(heart);
+            svg.appendChild(group);
+            
+            // Animate
+            let currentY = y;
+            let currentX = x;
+            const startTime = Date.now() + delay * 1000;
+            
+            function animate() {
+                const elapsed = (Date.now() - startTime) / 1000;
+                
+                if (elapsed < 0) {
+                    requestAnimationFrame(animate);
+                    return;
+                }
+                
+                if (elapsed > duration) {
+                    group.remove();
+                    return;
+                }
+                
+                const progress = elapsed / duration;
+                currentY = y - (progress * (window.innerHeight + 100));
+                currentX = x + Math.sin(progress * Math.PI * 2) * 50;
+                
+                group.setAttribute('transform', `translate(${currentX}, ${currentY}) scale(${size/24}) opacity(${1 - progress})`);
+                group.style.opacity = 1 - progress;
+                
+                requestAnimationFrame(animate);
+            }
+            
+            animate();
+        }
+        
+        // Create hearts at intervals
+        setInterval(createHeart, 500);
+        
+        // Initial hearts
+        for (let i = 0; i < 5; i++) {
+            setTimeout(createHeart, i * 200);
+        }
+    </script>
+</body>
+</html>

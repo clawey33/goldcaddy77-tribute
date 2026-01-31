@@ -1,0 +1,44 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0a0e27;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1a2a4e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fieldGrad2" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d7e3e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a5a2f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#bgGrad2)"/>
+  <rect y="150" width="400" height="250" fill="url(#fieldGrad2)"/>
+  
+  <!-- Goal -->
+  <rect x="20" y="120" width="60" height="60" fill="none" stroke="#00BFFF" stroke-width="3" rx="5"/>
+  <line x1="20" y1="150" x2="80" y2="150" stroke="#00BFFF" stroke-width="2" opacity="0.6"/>
+  
+  <!-- Ball going into goal with trail -->
+  <circle cx="35" cy="145" r="18" fill="#FFD700" opacity="0.95"/>
+  <circle cx="35" cy="145" r="15" fill="#FFF" opacity="0.2"/>
+  
+  <!-- Trail effect -->
+  <circle cx="55" cy="148" r="12" fill="#FFD700" opacity="0.5"/>
+  <circle cx="75" cy="152" r="8" fill="#FFD700" opacity="0.3"/>
+  
+  <!-- Blue car celebrating -->
+  <g transform="translate(280, 200)">
+    <ellipse cx="0" cy="0" rx="28" ry="16" fill="#0099FF" opacity="0.9"/>
+    <rect x="-16" y="-9" width="22" height="11" fill="#87CEEB" opacity="0.8" rx="2"/>
+    <circle cx="-16" cy="14" r="7" fill="#333"/>
+    <circle cx="16" cy="14" r="7" fill="#333"/>
+    <!-- Jump effect -->
+    <rect x="-25" y="-40" width="50" height="3" fill="#0099FF" opacity="0.4"/>
+  </g>
+  
+  <!-- Crowd effect -->
+  <text x="100" y="60" font-size="48" fill="#FFD700" opacity="0.6">⚡</text>
+  <text x="250" y="80" font-size="48" fill="#00BFFF" opacity="0.6">⚡</text>
+  
+  <!-- Score -->
+  <text x="30" y="280" font-size="48" font-weight="bold" fill="#FFF" opacity="0.9">GOOOAL!</text>
+</svg>

@@ -1,0 +1,53 @@
+<svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a0033;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#330066;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="fieldGrad3" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a8a2a;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0f5a1f;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="400" height="400" fill="url(#bgGrad3)"/>
+  <rect y="140" width="400" height="260" fill="url(#fieldGrad3)"/>
+  
+  <!-- Center line -->
+  <line x1="200" y1="140" x2="200" y2="400" stroke="white" stroke-width="2" opacity="0.4" stroke-dasharray="10,10"/>
+  
+  <!-- Ball in mid-air with aura -->
+  <circle cx="120" cy="100" r="22" fill="#FFD700" opacity="0.8"/>
+  <circle cx="120" cy="100" r="28" fill="#FFD700" opacity="0.2"/>
+  <circle cx="120" cy="100" r="34" fill="#FFD700" opacity="0.1"/>
+  
+  <!-- Two cars mid-play -->
+  <!-- Red car jumping -->
+  <g transform="translate(80, 180)">
+    <ellipse cx="0" cy="0" rx="26" ry="15" fill="#FF3333" opacity="0.9"/>
+    <rect x="-15" y="-8" width="20" height="10" fill="#FFB3B3" opacity="0.7" rx="2"/>
+    <circle cx="-14" cy="13" r="6" fill="#222"/>
+    <circle cx="14" cy="13" r="6" fill="#222"/>
+    <!-- Jump trail -->
+    <line x1="-14" y1="22" x2="-14" y2="40" stroke="#FF3333" stroke-width="1" opacity="0.5"/>
+    <line x1="14" y1="22" x2="14" y2="40" stroke="#FF3333" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Yellow car defending -->
+  <g transform="translate(280, 200)">
+    <ellipse cx="0" cy="0" rx="26" ry="15" fill="#FFFF00" opacity="0.85"/>
+    <rect x="-15" y="-8" width="20" height="10" fill="#FFFACD" opacity="0.7" rx="2"/>
+    <circle cx="-14" cy="13" r="6" fill="#333"/>
+    <circle cx="14" cy="13" r="6" fill="#333"/>
+    <!-- Speed lines -->
+    <line x1="-35" y1="-3" x2="-50" y2="-5" stroke="#FFFF00" stroke-width="1" opacity="0.6"/>
+    <line x1="-35" y1="3" x2="-50" y2="3" stroke="#FFFF00" stroke-width="1" opacity="0.5"/>
+  </g>
+  
+  <!-- Arena lights -->
+  <circle cx="50" cy="50" r="8" fill="#FFF" opacity="0.4"/>
+  <circle cx="350" cy="50" r="8" fill="#FFF" opacity="0.4"/>
+  
+  <!-- Action text -->
+  <text x="120" y="280" font-size="20" fill="#FFD700" opacity="0.8" font-weight="bold">INTENSE!</text>
+</svg>

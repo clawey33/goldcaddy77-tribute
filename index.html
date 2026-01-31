@@ -177,35 +177,38 @@
 
         .rl-gallery {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-            gap: 15px;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
             margin: 20px 0;
         }
 
         .rl-card {
-            aspect-ratio: 1;
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             border-radius: 10px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            font-weight: bold;
-            font-size: 0.9em;
-            text-align: center;
-            padding: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
             animation: float-card 3s ease-in-out infinite;
         }
 
         .rl-card:nth-child(1) { animation-delay: 0s; }
         .rl-card:nth-child(2) { animation-delay: 0.3s; }
         .rl-card:nth-child(3) { animation-delay: 0.6s; }
-        .rl-card:nth-child(4) { animation-delay: 0.9s; }
+
+        .rl-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.4);
+        }
+
+        .rl-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
 
         @keyframes float-card {
             0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
+            50% { transform: translateY(-5px); }
         }
 
         .rl-quote {
@@ -273,44 +276,13 @@
             
             <div class="rl-gallery">
                 <div class="rl-card">
-                    <div>
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <circle cx="30" cy="30" r="25" fill="white" opacity="0.9"/>
-                            <circle cx="30" cy="30" r="20" fill="#667eea"/>
-                            <circle cx="30" cy="30" r="15" fill="white" opacity="0.7"/>
-                        </svg>
-                        <p>BALL</p>
-                    </div>
+                    <img src="images/rl1.jpg" alt="Epic Rocket League Moment" loading="lazy"/>
                 </div>
                 <div class="rl-card">
-                    <div>
-                        <svg width="60" height="40" viewBox="0 0 60 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect x="10" y="15" width="40" height="20" rx="3" fill="white" opacity="0.9"/>
-                            <circle cx="15" cy="25" r="3" fill="#667eea"/>
-                            <circle cx="45" cy="25" r="3" fill="#667eea"/>
-                            <path d="M25 20 L35 20 L35 30 L25 30 Z" fill="#764ba2" opacity="0.7"/>
-                        </svg>
-                        <p>CAR</p>
-                    </div>
+                    <img src="images/rl2.jpg" alt="Rocket League Gameplay" loading="lazy"/>
                 </div>
                 <div class="rl-card">
-                    <div>
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="60" height="60" fill="rgba(255,255,255,0.1)"/>
-                            <line x1="30" y1="0" x2="30" y2="60" stroke="white" stroke-width="2" opacity="0.5"/>
-                            <line x1="0" y1="30" x2="60" y2="30" stroke="white" stroke-width="2" opacity="0.5"/>
-                            <circle cx="30" cy="30" r="8" fill="none" stroke="white" stroke-width="2" opacity="0.5"/>
-                        </svg>
-                        <p>FIELD</p>
-                    </div>
-                </div>
-                <div class="rl-card">
-                    <div>
-                        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M30 5 L35 20 L50 20 L38 28 L43 43 L30 35 L17 43 L22 28 L10 20 L25 20 Z" fill="white" opacity="0.9"/>
-                        </svg>
-                        <p>LEGEND</p>
-                    </div>
+                    <img src="images/rl3.jpg" alt="Amazing Rocket League Play" loading="lazy"/>
                 </div>
             </div>
 
